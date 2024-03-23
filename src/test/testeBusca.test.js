@@ -31,6 +31,10 @@ describe('TesteMockServiço', () => {
         const dados = meuServicoMock.busca(30);
         expect(dados.sala).toEqual("11");
     });
+    it('deve retornar true para professor existente', () => {
+        const meuServicoMock = new MeuServicoMock();
+        expect(meuServicoMock.professorExists(20)).toBe(true);
+    });
    
    
     

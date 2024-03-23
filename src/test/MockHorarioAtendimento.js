@@ -14,5 +14,9 @@ class MockHorarioAtendimento {
             throw new Error("ID inválido: " + id);
         }
     }
+    professorExists(id) {
+        const list = [10,20,30]
+        return list.includes(id);
+    }
     
 } module.exports = MockHorarioAtendimento
