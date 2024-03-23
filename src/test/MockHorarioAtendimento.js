@@ -1,32 +1,18 @@
+const professores = require('./professoresConst');
+
 class MockHorarioAtendimento {
     busca(id){
         if(id==10){
             
-            return {
-                nomeDoProfessor: "Chris",
-                horarioDeAtendimento: "19:30",
-                periodo: "noturno",
-                sala: "1",
-                predio: "1",
-              };
+            return professores.CHRIS
         }else if(id ==20){
-            return {
-                nomeDoProfessor: "Karina",
-                horarioDeAtendimento: "10:00",
-                periodo: "integral",
-                sala: "6",
-                predio: "2",
-              };
+            return professores.KARINA
+
         }else if(id == 30){
-            return {
-                nomeDoProfessor: "Vitoria",
-                horarioDeAtendimento: "15:30",
-                periodo: "integral",
-                sala: "11",
-                predio: "3",
-              };
+            return professores.VITORIA
         }else{
             throw new Error("ID inválido: " + id);
         }
     }
+    
 } module.exports = MockHorarioAtendimento
