@@ -29,4 +29,4 @@ class MockHorarioAtendimento {
             throw new Error("ID inválido: " + id);
         }
     }
-}
+} module.exports = MockHorarioAtendimento
