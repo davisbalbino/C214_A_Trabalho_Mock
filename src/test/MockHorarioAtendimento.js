@@ -15,7 +15,13 @@ class MockHorarioAtendimento {
         }
     }
     professorExists(id) {
-        const list = [10,20,30]
+        const list = []
+        list.push(10)
+        list.push(20)
+        list.push(30)
+        list[10] = professores.CHRIS
+        list[20] = professores.KARINA
+        list[30] = professores.VITORIA
         return list.includes(id);
     }
     
